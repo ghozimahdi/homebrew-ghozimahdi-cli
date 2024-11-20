@@ -98,12 +98,12 @@ Total modules available: 49, Pilih module (contoh: 1,2,3 atau 0 untuk semua):
 ## **🎯 Sponsor Kami**
 Proyek ini dikelola oleh pengembang independen. Dukung pengembangan lebih lanjut melalui sponsor!
 💖 Donasi Anda membantu kami untuk:
-	•	Menambahkan fitur baru.
-	•	Memperbaiki bug lebih cepat.
-	•	Meningkatkan dokumentasi.
+- Menambahkan fitur baru.
+- Memperbaiki bug lebih cepat.
+- Meningkatkan dokumentasi.
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue)](https://github.com/sponsors/mbahgojol)
 
-kofi: [ghozimahdi](https://ko-fi.com/ghozimahdi)
-
+kofi: [ghozimahdi-ko-fi](https://ko-fi.com/ghozimahdi)
+Trakteer: [ghozimahdi-trakteer](teer.id/ghozimahdi)
 ---
