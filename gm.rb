@@ -1,9 +1,9 @@
 class Gm < Formula
     desc "CLI sederhana untuk mengelola modul Melos"
     homepage "https://github.com/mbahgojol/homebrew-ghozimahdi-cli"
-    url "https://github.com/mbahgojol/homebrew-ghozimahdi-cli/releases/download/v2.0.0/gm-v200.tar.gz"
-    sha256 "37779d144089236ed7d4108f613b67a98dcc1f016526eeb4e3b5c80d4ceb3b70"
-    version "2.0.0"
+    url "https://github.com/mbahgojol/homebrew-ghozimahdi-cli/releases/download/v2.0.1/gm-v201.tar.gz"
+    sha256 "ff30d5d9ee1a454a8d970926889f5013be0f6d40ba90d6cf37dda3b4b20bd001"
+    version "2.0.1"
   
     def install
       bin.install "gm"
