@@ -73,6 +73,80 @@ gm [OPTIONS] [COMMAND]
 
 ---
 
+## **Generated Project Structure**
+
+When you use the `gm create` command, the generated project follows the **Clean Architecture** principles with a modular structure. Below is an example of the generated structure:
+
+```
+packages/
+  ├── library/
+  │   ├── core/
+  │   └── resource/
+  ├── data/
+  │   ├── data_common/
+  │   ├── data_auth/
+  │   └── data_analytic/
+  │       ├── di/
+  │       ├── config/
+  │       ├── model/
+  │       ├── mapper/
+  │       └── repository/
+  ├── domain/
+  │   ├── domain_common/
+  │   ├── domain_auth/
+  │   └── domain_analytic/
+  │       ├── di/
+  │       ├── config/
+  │       ├── model/
+  │       ├── use_case/
+  │       └── repository/
+  └── presentation/
+      ├── feature_common/
+      ├── feature_dashboard/
+      └── feature_auth/
+          ├── bloc/
+          ├── config/
+          ├── di/
+          └── page/
+```
+
+### **Description of Main Directories**
+1. **Library**:
+   - Contains core utilities and shared resources that can be reused across modules.
+2. **Data**:
+   - Responsible for managing data sources, configurations, models, mappers, and repository implementations for different modules.
+3. **Domain**:
+   - Defines business logic, including use cases, repository interfaces, and domain-specific configurations for each module.
+4. **Presentation**:
+   - Manages the UI layer, which includes features, pages, state management (e.g., BLoC), and configurations for the presentation layer.
+
+### **Highlights**
+- **Modularity**: Each feature (e.g., `auth`, `dashboard`, `analytic`) is modularized to improve scalability and maintainability.
+- **Separation of Concerns**: Code is structured to clearly separate the responsibilities of each layer (Data, Domain, Presentation).
+- **Reusable Components**: Core utilities and shared resources in the `library` directory enable easy reuse across modules.
+
+## **Result of `build_runner`**
+
+The `gm build` command provides an interactive interface to select specific modules for code generation using the `build_runner`. This is designed for managing multi-module Flutter projects.
+
+### **Example Interface**:
+```dart
++----------------+------------------+----------------------+---------------+
+| Data Modules   | Domain Modules   | Feature Modules      | Other Modules |
++----------------+------------------+----------------------+---------------+
+| 3. data_auth   | 5. domain_auth   | 7. feature_auth      | 1. app        |
+| 4. data_common | 6. domain_common | 8. feature_common    | 2. core       |
+|                |                  | 9. feature_dashboard | 10. resource  |
+|                |                  |                      | 11. MSG       |
++----------------+------------------+----------------------+---------------+
+Total modules available: 11, Select modules (example: 1,2,3 or 0 for all): 
+```
+
+### **Key Features**:
+- **Module Selection**: Choose specific modules (e.g., `1,2,3`) or generate code for all modules (`0`).
+- **Multi-Module Support**: Easily handle code generation across multiple modules in your Flutter project.
+- **Flexibility**: Allows developers to focus on relevant modules during the code generation process.
+
 ## **🎯 Support Us**
 This project is maintained by an independent developer. Support further development through sponsorship!
 💖 Your donations help us to:
