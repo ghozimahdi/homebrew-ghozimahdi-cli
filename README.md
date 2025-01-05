@@ -8,7 +8,9 @@ A simple CLI tool designed to simplify the process of managing **Flutter** proje
 ## **Features**
 - **Clear**: Clean the Flutter project and remove `pubspec.lock` for selected modules.
 - **App**: Interactively build APK or IPA files.
-- **Create**: Generate a new Flutter project or module.
+- **Create**: 
+  - **Create Project**: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.  
+  - **Create Module**: Create a module for modularization to enhance scalability and maintainability.
 - **Build**: Run `build_runner` after selecting a module.
 - **Get**: Execute `flutter pub get` for selected modules.
 - **Donate**: Show gratitude and support the development of this CLI tool.
@@ -54,7 +56,8 @@ gm [OPTIONS] [COMMAND]
 ### **Commands**
 - `clear`: Run `flutter_clean` and remove `pubspec.lock` for selected modules.
 - `app`: Interactively build APK or IPA files.
-- `create`: Create a new Flutter project or module.
+- `create project`: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.
+- `create module`: Create a new module specifically for modularization to enhance scalability and maintainability.
 - `build`: Run `build_runner` after selecting a module.
 - `get`: Run `flutter pub get` after selecting a module.
 - `donate`: Show gratitude and support the development of this CLI tool.
@@ -157,4 +160,4 @@ This project is maintained by an independent developer. Support further developm
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue)](https://github.com/sponsors/mbahgojol)
 
 Ko-fi: [ghozimahdi-ko-fi](https://ko-fi.com/ghozimahdi)  
-Trakteer: [ghozimahdi-trakteer](https://trakteer.id/ghozimahdi)
+Saweria: [ghozimahdi-saweria](https://saweria.co/ghozimahdi)
