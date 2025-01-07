@@ -150,6 +150,10 @@ Total modules available: 11, Select modules (example: 1,2,3 or 0 for all):
 - **Multi-Module Support**: Easily handle code generation across multiple modules in your Flutter project.
 - **Flexibility**: Allows developers to focus on relevant modules during the code generation process.
 
+## **🎯 Special Thanks**
+
+I would like to express my heartfelt gratitude to **[Ferry](https://github.com/ferryyuwono)** for his invaluable insights on modular project architecture. His guidance has been instrumental in shaping the structure and scalability of this tool. Thank you for sharing your expertise and inspiring better practices in project management!
+
 ## **🎯 Support Us**
 This project is maintained by an independent developer. Support further development through sponsorship!
 💖 Your donations help us to:
