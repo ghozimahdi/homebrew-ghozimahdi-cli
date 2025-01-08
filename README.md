@@ -32,7 +32,7 @@ Ensure you have the following prerequisites installed before using this CLI:
 ## **Installation via Homebrew**
 1. **Add the Ghozi Mahdi CLI tap**:
    ```bash
-   brew tap mbahgojol/homebrew-ghozimahdi-cli
+   brew tap ghozimahdi/homebrew-ghozimahdi-cli
    ```
 
 2. **Install the Ghozi Mahdi CLI** via Homebrew:
