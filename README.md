@@ -47,6 +47,16 @@ Ensure you have the following prerequisites installed before using this CLI:
 
 ---
 
+## **Update via Homebrew**
+
+To update the Ghozi Mahdi CLI to the latest version, run:
+```bash
+brew update
+brew upgrade gm
+```
+
+---
+
 ## **Usage**
 Run the following command inside your Flutter project directory:
 ```bash
