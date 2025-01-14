@@ -53,6 +53,11 @@ Run the following command inside your Flutter project directory:
 gm [OPTIONS] [COMMAND]
 ```
 
+### Examples
+- `gm -b` : Run `build_runner` (shortcut for `gm build`).
+- `gm -g` : Run `flutter pub get` (shortcut for `gm get`).
+- `gm -c` : Run `flutter clean` (shortcut for `gm clear`).
+
 ### **Commands**
 - `clear`: Run `flutter_clean` and remove `pubspec.lock` for selected modules.
 - `app`: Interactively build APK or IPA files.
@@ -68,11 +73,16 @@ gm [OPTIONS] [COMMAND]
 - `-b`, `--build`: Run `build_runner` after module selection.
 - `-l`, `--localize`: Generate `easy_localization` files.
 - `-a`, `--assets`: Generate assets with `flutter gen`.
-- `-c`, `--flutter_clean`: Flutter clean for a single module.
+- `-c`, `--flutter_clean`: Flutter clear for a single module.
 - `-g`, `--flutter_get`: Run `flutter pub get` for a single module.
 - `--all`: Run `build_runner`, generate `easy_localization`, and assets after selecting a module.
 - `-h`, `--help`: Print help information.
 - `-V`, `--version`: Print version information.
+
+### Notes
+
+- You can use **commands** (e.g., `gm build`) or their corresponding **options** (e.g., `gm -b`) for faster access.
+- **Options** are designed to simplify frequently used commands.
 
 ---
 
