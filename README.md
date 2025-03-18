@@ -101,10 +101,10 @@ gm [OPTIONS] [COMMAND]
 When you use the `gm create` command, the generated project follows the **Clean Architecture** principles with a modular structure. Below is an example of the generated structure:
 
 ```
+app/
 packages/
   ├── library/
-  │   ├── core/
-  │   └── resource/
+  │   ├── common/
   ├── data/
   │   ├── data_common/
   │   ├── data_auth/
@@ -135,7 +135,7 @@ packages/
 
 ### **Description of Main Directories**
 1. **Library**:
-   - Contains core utilities and shared resources that can be reused across modules.
+   - Contains shared utilities, components, and resources that are commonly used across multiple modules.
 2. **Data**:
    - Responsible for managing data sources, configurations, models, mappers, and repository implementations for different modules.
 3. **Domain**:
@@ -158,9 +158,9 @@ The `gm build` command provides an interactive interface to select specific modu
 | Data Modules   | Domain Modules   | Feature Modules      | Other Modules |
 +----------------+------------------+----------------------+---------------+
 | 3. data_auth   | 5. domain_auth   | 7. feature_auth      | 1. app        |
-| 4. data_common | 6. domain_common | 8. feature_common    | 2. core       |
-|                |                  | 9. feature_dashboard | 10. resource  |
-|                |                  |                      | 11. MSG       |
+| 4. data_common | 6. domain_common | 8. feature_common    | 2. common     |
+|                |                  | 9. feature_dashboard |               |
+|                |                  |                      |               |
 +----------------+------------------+----------------------+---------------+
 Total modules available: 11, Select modules (example: 1,2,3 or 0 for all): 
 ```
