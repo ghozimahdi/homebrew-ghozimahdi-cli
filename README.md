@@ -74,6 +74,9 @@ gm [OPTIONS] [COMMAND]
 ### **Commands**
 - `clear`: Run `flutter_clean` and remove `pubspec.lock` for selected modules.
 - `app`: Interactively build APK or IPA files.
+- `flutter`: Run Flutter commands like `pub add <package>`.
+- `dart`: Run Dart commands like `pub add <package>`.
+- `route`: Automatically generate route files for Flutter project.
 - `create project`: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.
 - `create module`: Create a new module specifically for modularization to enhance scalability and maintainability.
 - `build`: Run `build_runner` after selecting a module.
