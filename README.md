@@ -8,6 +8,9 @@ A simple CLI tool designed to simplify the process of managing **Flutter** proje
 ## **Features**
 - **Clear**: Clean the Flutter project and remove `pubspec.lock` for selected modules.
 - **App**: Interactively build APK or IPA files.
+- **flutter**: Run Flutter commands like `pub add <package>`.
+- **dart**: Run Dart commands like `pub add <package>`.
+- **route**: Automatically generate route files for Flutter project.
 - **Create**: 
   - **Create Project**: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.  
   - **Create Module**: Create a module for modularization to enhance scalability and maintainability.
