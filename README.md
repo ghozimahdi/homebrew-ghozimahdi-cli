@@ -81,10 +81,10 @@ gm [OPTIONS] [COMMAND]
 When you use the `gm create` command, the generated project follows the **Clean Architecture** principles with a modular structure. Below is an example of the generated structure:
 
 ```
+app/
 packages/
   ├── library/
-  │   ├── core/
-  │   └── resource/
+  │   ├── library_common/
   ├── data/
   │   ├── data_common/
   │   ├── data_auth/
@@ -134,15 +134,15 @@ The `gm build` command provides an interactive interface to select specific modu
 
 ### **Example Interface**:
 ```dart
-+----------------+------------------+----------------------+---------------+
-| Data Modules   | Domain Modules   | Feature Modules      | Other Modules |
-+----------------+------------------+----------------------+---------------+
-| 3. data_auth   | 5. domain_auth   | 7. feature_auth      | 1. app        |
-| 4. data_common | 6. domain_common | 8. feature_common    | 2. core       |
-|                |                  | 9. feature_dashboard | 10. resource  |
-|                |                  |                      | 11. MSG       |
-+----------------+------------------+----------------------+---------------+
-Total modules available: 11, Select modules (example: 1,2,3 or 0 for all): 
++----------------+------------------+----------------------+---------------------+
+| Data Modules   | Domain Modules   | Feature Modules      | Other Modules       |
++----------------+------------------+----------------------+---------------------+
+| 3. data_auth   | 5. domain_auth   | 7. feature_auth      | 1. app              |
+| 4. data_common | 6. domain_common | 8. feature_common    | 2. library_common   |
+|                |                  | 9. feature_dashboard |                     |
+|                |                  |                      |                     |
++----------------+------------------+----------------------+---------------------+
+Total modules available: 9, Select modules (example: 1,2,3 or 0 for all): 
 ```
 
 ### **Key Features**:
@@ -161,7 +161,7 @@ This project is maintained by an independent developer. Support further developm
 - Fix bugs faster.
 - Improve documentation.
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue)](https://github.com/sponsors/mbahgojol)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue)](https://github.com/sponsors/ghozimahdi)
 
 Ko-fi: [ghozimahdi-ko-fi](https://ko-fi.com/ghozimahdi)  
 Saweria: [ghozimahdi-saweria](https://saweria.co/ghozimahdi)
