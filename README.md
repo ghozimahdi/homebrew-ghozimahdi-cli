@@ -8,6 +8,9 @@ A simple CLI tool designed to simplify the process of managing **Flutter** proje
 ## **Features**
 - **Clear**: Clean the Flutter project and remove `pubspec.lock` for selected modules.
 - **App**: Interactively build APK or IPA files.
+- **Flutter**: Run Flutter commands like `pub add <package>`.
+- **Dart**: Run Dart commands like `pub add <package>`.
+- **Route**: Automatically generate route files for Flutter project.
 - **Create**: 
   - **Create Project**: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.  
   - **Create Module**: Create a module for modularization to enhance scalability and maintainability.
@@ -32,7 +35,7 @@ Ensure you have the following prerequisites installed before using this CLI:
 ## **Installation via Homebrew**
 1. **Add the Ghozi Mahdi CLI tap**:
    ```bash
-   brew tap mbahgojol/homebrew-ghozimahdi-cli
+   brew tap ghozimahdi/homebrew-ghozimahdi-cli
    ```
 
 2. **Install the Ghozi Mahdi CLI** via Homebrew:
@@ -47,15 +50,33 @@ Ensure you have the following prerequisites installed before using this CLI:
 
 ---
 
+## **Update via Homebrew**
+
+To update the Ghozi Mahdi CLI to the latest version, run:
+```bash
+brew update
+brew upgrade gm
+```
+
+---
+
 ## **Usage**
 Run the following command inside your Flutter project directory:
 ```bash
 gm [OPTIONS] [COMMAND]
 ```
 
+### Examples
+- `gm -b` : Run `build_runner` (shortcut for `gm build`).
+- `gm -g` : Run `flutter pub get` (shortcut for `gm get`).
+- `gm -c` : Run `flutter clean` (shortcut for `gm clear`).
+
 ### **Commands**
 - `clear`: Run `flutter_clean` and remove `pubspec.lock` for selected modules.
 - `app`: Interactively build APK or IPA files.
+- `flutter`: Run Flutter commands like `pub add <package>`.
+- `dart`: Run Dart commands like `pub add <package>`.
+- `route`: Automatically generate route files for Flutter project.
 - `create project`: Generate a new Flutter project with a well-organized Clean Architecture and modular structure.
 - `create module`: Create a new module specifically for modularization to enhance scalability and maintainability.
 - `build`: Run `build_runner` after selecting a module.
@@ -68,11 +89,16 @@ gm [OPTIONS] [COMMAND]
 - `-b`, `--build`: Run `build_runner` after module selection.
 - `-l`, `--localize`: Generate `easy_localization` files.
 - `-a`, `--assets`: Generate assets with `flutter gen`.
-- `-c`, `--flutter_clean`: Flutter clean for a single module.
+- `-c`, `--flutter_clean`: Flutter clear for a single module.
 - `-g`, `--flutter_get`: Run `flutter pub get` for a single module.
 - `--all`: Run `build_runner`, generate `easy_localization`, and assets after selecting a module.
 - `-h`, `--help`: Print help information.
 - `-V`, `--version`: Print version information.
+
+### Notes
+
+- You can use **commands** (e.g., `gm build`) or their corresponding **options** (e.g., `gm -b`) for faster access.
+- **Options** are designed to simplify frequently used commands.
 
 ---
 
@@ -115,7 +141,7 @@ packages/
 
 ### **Description of Main Directories**
 1. **Library**:
-   - Contains core utilities and shared resources that can be reused across modules.
+   - Contains shared utilities, components, and resources that are commonly used across multiple modules.
 2. **Data**:
    - Responsible for managing data sources, configurations, models, mappers, and repository implementations for different modules.
 3. **Domain**:
