@@ -12,6 +12,7 @@ class Gm < Formula
   elsif OS.windows?
     url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v3.0.4/gm-x86_64-pc-windows-gnu.tar.gz"
     sha256 "48604c298c93757808b265b2f3b2beefac3b5b8c4fcd3bcde5fd219cb3016a93"
+  end
 
   def install
     bin.install "gm"
