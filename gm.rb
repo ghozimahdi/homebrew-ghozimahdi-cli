@@ -1,18 +1,14 @@
 class Gm < Formula
   desc "GM CLI tool for managing Flutter projects"
   homepage "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli"
-  version "3.0.6"
+  version "4.0.0"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v3.0.6/gm-x86_64-apple-darwin.tar.gz"
-    sha256 "a7dca2674574cd23ba4ee59803201921a26ed276bc953961736d71150d4091f8"
+    url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v4.0.0/gm-x86_64-apple-darwin.tar.gz"
+    sha256 "87076fa943d22a8b6687dbd72ae6be9a2b3297c75c32cf80ab9ae2bf379ca44d"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v3.0.6/gm-aarch64-apple-darwin.tar.gz"
-    sha256 "eabbcfee9b636330cd370f69e2b306d536749c9f739c77f7ef3b067f0a0e530d"
-  elsif OS.windows?
-    url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v3.0.6/gm-x86_64-pc-windows-gnu.tar.gz"
-    sha256 "9f3c74d581acb7891360971594c568c5aa8999b2ad35aabec6231912b9ef3eb9"
-  end
+    url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v4.0.0/gm-aarch64-apple-darwin.tar.gz"
+    sha256 "aae9f32d3506f4c6e9ced60ffd0b7d1f40b435652553be6ae5ff1363d3b8607e"
 
   def install
     bin.install "gm"
