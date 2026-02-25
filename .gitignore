@@ -1,0 +1,14 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ruby LSP
+.ruby-lsp/
+
+# macOS
+.DS_Store
+
+# Binary release files
+# NOTE: tar.gz files will be pushed temporarily by CI, then auto-removed after release
