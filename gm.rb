@@ -5,10 +5,10 @@ class Gm < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v4.0.1/gm-x86_64-apple-darwin.tar.gz"
-    sha256 "39e479078597701cc59c0538d9e93f76c0f98e84b58cc098a30ffd8fda9d5a85"
+    sha256 "1672208cd31febaa6662cf4d1f1797e43c52e4bf3dd0abb848fec2fb941ed21c"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/ghozimahdi/homebrew-ghozimahdi-cli/releases/download/v4.0.1/gm-aarch64-apple-darwin.tar.gz"
-    sha256 "a92cf41052cdaaf2f7410a1c7327eb62c9c6cdb6fbabbd47478ff3eff591d08f"
+    sha256 "8a695f6fdce839dfac826bafae1dbc124dc6395a013ba1d05d39407fe552194c"
   end
 
   def install
